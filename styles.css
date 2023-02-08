@@ -45,13 +45,13 @@ main {
     grid-template-rows: .1fr 1fr 1fr;
 }
 
-.header {
+.header-exp {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header > p {
+.header-exp > p {
     font-size: 4rem;
     letter-spacing: 1px;
     font-family: spotMedium;
@@ -91,6 +91,11 @@ main {
     color: #de0f9b;
 }
 
+.emp2 {
+    font-family: spotMedium;
+    color:#c1e86b
+}
+
 
 
 
@@ -124,7 +129,49 @@ main {
     background-color: #de0f9b;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "prog frame"
+        "head head"
+    ;
+}
+
+.prog-lang {
+    grid-area: prog;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.frame {
+    grid-area: frame;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.p-skill {
+    font-family: spotMedium;
+}
+
+.prog-lang > :first-child, .frame > :first-child {
+    color: #c1e86b;
+    font-family: spotMedium;
+}
+
+
+.header-skills {
+    display: flex;
+    justify-content: center;
+    grid-area: head;
+}
+
+.header-skills > p {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: spotMedium;
 }
 
 .education {
@@ -132,13 +179,37 @@ main {
     width: 100%;
     height: 100%;
     background-color: #25947f;
+    display: grid;
+    grid-template-rows: .25fr 2fr;
 }
+
+.header-edu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-edu > p {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: spotMedium;
+    margin-top: 60px;
+}
+
+.edu-info > p {
+    font-size: 1.3rem;
+}
+
 
 .showcase {
     grid-area: intro;
     width: 100%;
     height: 100%;
     background-color: black;
+}
+
+.header > p {
+    color: white;
 }
 
 .fun-facts {
