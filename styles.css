@@ -35,6 +35,10 @@ main {
     height: 100vh;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
 
 .experience {
     grid-area: exp;
@@ -43,10 +47,11 @@ main {
     background-color: #c1e86b;
     display: grid;
     grid-template-rows: .1fr 1fr 1fr;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
 
-.exp1, .exp2 {
-}
 
 .header-exp {
     display: flex;
@@ -100,21 +105,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .top {
     position: relative;
     bottom: 8px;
@@ -137,6 +127,9 @@ main {
         "prog frame"
         "head head"
     ;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
 
 .prog-lang {
@@ -184,6 +177,9 @@ main {
     background-color: #25947f;
     display: grid;
     grid-template-rows: .25fr 2fr;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
 
 .header-edu {
@@ -234,6 +230,8 @@ main {
     line-height: 50px;
     font-family: spotMedium;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .fun-facts {
@@ -242,6 +240,9 @@ main {
     height: 100%;
     background-color: #c1e86b;
     grid-template-rows: 1fr 1fr;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
 }
 
 .header-fun {
@@ -266,4 +267,16 @@ main {
     font-size: 1.2rem;
     margin-left: 10px;
 }
+
+/* Hover Effects on Cards*/
+.experience:hover, .skills:hover, .education:hover, .fun-facts:hover {
+    transform: scale(1.01);
+}
+
+.header-show > p:hover {
+    color:#de0f9b;
+    transform: scale(1.01);
+}
+
+
 
