@@ -1,0 +1,150 @@
+@font-face {
+    font-family: spotLight;
+    src: url(fonts/spotLight.ttf);
+}
+
+@font-face {
+    font-family: spotMedium;
+    src: url(fonts/spotMedium.ttf);
+}
+
+@font-face {
+    font-family: spotBold;
+    src: url(fonts/spotbold.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "exp skill intro"
+        "exp skill intro"
+        "exp edu fact"
+        "exp edu fact"
+        "exp edu fact"
+    ;
+    gap: 30px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.experience {
+    grid-area: exp;
+    width: 100%;
+    height: 100vh;
+    background-color: #c1e86b;
+    display: grid;
+    grid-template-rows: .1fr 1fr 1fr;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > p {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: spotMedium;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+
+.exp-1 > :first-child, .exp-2 > :first-child {
+    font-family: spotMedium;
+    font-size: 1.1rem;
+    color: #de0f9b;
+  
+}
+
+.exp-1 > :nth-child(2), .exp-2 > :nth-child(2) {
+    font-family: spotMedium;
+    font-size: 1.6rem;
+}
+
+.exp-1 > :nth-child(3), .exp-2 > :nth-child(3) {
+    font-family: spotMedium;
+    font-size: 1.2rem;
+}
+
+.p-text {
+    font-family: spotLight;
+    font-weight: bolder;
+    line-height: 20px;
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+.emp {
+    font-family: spotMedium;
+    color: #de0f9b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top {
+    position: relative;
+    bottom: 8px;
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.skills {
+    grid-area: skill;
+    width: 100%;
+    height: 100%;
+    background-color: #de0f9b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.education {
+    grid-area: edu;
+    width: 100%;
+    height: 100%;
+    background-color: #25947f;
+}
+
+.showcase {
+    grid-area: intro;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.fun-facts {
+    grid-area: fact;
+    width: 100%;
+    height: 100%;
+    background-color: #c1e86b;
+}
+
