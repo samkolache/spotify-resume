@@ -45,6 +45,9 @@ main {
     grid-template-rows: .1fr 1fr 1fr;
 }
 
+.exp1, .exp2 {
+}
+
 .header-exp {
     display: flex;
     justify-content: space-between;
@@ -193,7 +196,13 @@ main {
     font-size: 4rem;
     letter-spacing: 1px;
     font-family: spotMedium;
-    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.edu-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .edu-info > p {
@@ -208,8 +217,23 @@ main {
     background-color: black;
 }
 
-.header > p {
-    color: white;
+.header-show {
+    display: flex;
+    justify-content: space-around;
+}
+
+.head-spot {
+    width: 100px;
+    height: 70px;
+}
+
+.header-show > p {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #c1e86b;
+    line-height: 50px;
+    font-family: spotMedium;
+    margin-top: 10px;
 }
 
 .fun-facts {
@@ -217,5 +241,29 @@ main {
     width: 100%;
     height: 100%;
     background-color: #c1e86b;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-fun {
+    display: flex;
+    margin-top: 15px;
+}
+
+.header-fun > p {
+    font-size: 3.5rem;
+    color: #de0f9b;
+    font-family: spotBold;
+    margin-bottom: 30px;
+}
+
+.facts {
+   margin-top: 35px;
+   margin-right: 10px;
+}
+
+.facts > :first-child {
+    font-family: spotMedium;
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
