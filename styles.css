@@ -19,7 +19,6 @@ body {
 }
 
 main {
-    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -30,9 +29,10 @@ main {
         "exp edu fact"
         "exp edu fact"
     ;
-    gap: 30px;
+    gap: 20px;
     width: 100vw;
     height: 100vh;
+    margin: 20px;
 }
 
 li {
@@ -73,17 +73,20 @@ li {
     font-family: spotMedium;
     font-size: 1.1rem;
     color: #de0f9b;
+    padding-left: 10px;
   
 }
 
 .exp-1 > :nth-child(2), .exp-2 > :nth-child(2) {
     font-family: spotMedium;
     font-size: 1.6rem;
+    padding-left: 10px;
 }
 
 .exp-1 > :nth-child(3), .exp-2 > :nth-child(3) {
     font-family: spotMedium;
     font-size: 1.2rem;
+    padding-left: 10px;
 }
 
 .p-text {
@@ -211,6 +214,8 @@ li {
     width: 100%;
     height: 100%;
     background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .header-show {
@@ -230,6 +235,7 @@ li {
     line-height: 50px;
     font-family: spotMedium;
     margin-top: 10px;
+    margin-bottom: 5px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -276,6 +282,41 @@ li {
 .header-show > p:hover {
     color:#de0f9b;
     transform: scale(1.01);
+}
+
+/* Giphy Stuff */
+
+label {
+    font-family: spotMedium;
+    color:#c1e86b;
+}
+
+button {
+    font-family: spotMedium;
+    line-height: 45px;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #c1e86b;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    background-color: #de0f9b;
+    transform: scale(1.1);
+}
+
+input {
+    border-radius: 8px;
+    border: 0px;
+    outline-color: black;
+}
+
+.gif {
+    color: white;
+    font-family: spotLight;
 }
 
 
